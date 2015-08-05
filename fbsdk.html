@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>Facebook SDK example</title>
+</head>
+<body>
+
+<div id="main"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="fbsdk.js"></script>
+
+<script>
+  FB.getSitconPosts(function(resp) {
+    console.log(resp);
+  });
+
+  // $.ajax({
+  //   url: 'https://slack.com/api/channels.history?token=XXXX&channel=C02ML884Y',
+  //   type: 'GET',
+  //   dataType: 'json',
+  //   success: function(data) {
+  //     console.log(data);
+  //     for (var i in data.messages) {
+  //       $('#main').append(data.messages[i].text + '<br>');
+  //     }
+  //   }
+  // })
+</script>
+
+</body>
+</html>
